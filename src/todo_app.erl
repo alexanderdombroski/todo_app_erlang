@@ -1,4 +1,3 @@
-
 -module(todo_app).
 -behaviour(application).
 

@@ -1,5 +1,3 @@
-
-
 -module(todo_server).
 -behaviour(gen_server).
 
@@ -11,6 +9,7 @@
 -define(TODO_FILE, "todo_list.csv").
 
 start_link() ->
+    io:format("Starting todo_server...~n"),
     gen_server:start_link({local, ?MODULE}, ?MODULE, [], []).
 
 init([]) ->

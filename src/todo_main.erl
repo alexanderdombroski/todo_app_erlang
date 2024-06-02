@@ -1,5 +1,3 @@
-
-
 -module(todo_main).
 -export([start/0]).
 
